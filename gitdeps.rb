@@ -5,21 +5,21 @@
 class Gitdeps < Formula
   desc "Git dependencies manager. Simplified version of git submodules."
   homepage "https://github.com/Nelonn/gitdeps"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.1/gitdeps_0.0.1_darwin_amd64.zip"
-      sha256 "70af979a59f94256c878d3a04b027e4db6ab449508f17a163a941f7fe609aff3"
+      url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.2/gitdeps_0.0.2_darwin_amd64.zip"
+      sha256 "448f01137610707aed71f2f23c783f168ac76492d78a9ef9e79fad0f4d46ebae"
 
       def install
         bin.install "gitdeps"
       end
     end
     on_arm do
-      url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.1/gitdeps_0.0.1_darwin_arm64.zip"
-      sha256 "889fb69b3e856f3a5c62028ead4d703731d1acdbb7510fbd4cdaafff1dd9698c"
+      url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.2/gitdeps_0.0.2_darwin_arm64.zip"
+      sha256 "a827352a187f8edf54233ab62aa00b6a6a09234aa967d5a98a06377af8cedc2a"
 
       def install
         bin.install "gitdeps"
@@ -30,8 +30,8 @@ class Gitdeps < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.1/gitdeps_0.0.1_linux_amd64.tar.gz"
-        sha256 "70e0ae2d9882bc7f6a2e87be7c1187ee94782b02d199bb4f6ddc45466cc02f83"
+        url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.2/gitdeps_0.0.2_linux_amd64.tar.gz"
+        sha256 "485ad7c167abd27a8d815e95ec093e60d33a19cf5219544cf0b7a74ac75575f0"
 
         def install
           bin.install "gitdeps"
@@ -40,8 +40,8 @@ class Gitdeps < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.1/gitdeps_0.0.1_linux_armv6.tar.gz"
-        sha256 "2c52fa91d5c2bacc3ba8de0b78fe0483ebf11ae4bf7be663214bc3e2a479ff08"
+        url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.2/gitdeps_0.0.2_linux_armv6.tar.gz"
+        sha256 "5144ef2d5c7d52702c4793a55aa086c39ff358da1bbe3e77dace9aa63e8d3c9a"
 
         def install
           bin.install "gitdeps"
@@ -50,8 +50,8 @@ class Gitdeps < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.1/gitdeps_0.0.1_linux_arm64.tar.gz"
-        sha256 "5dd0802033e6098c2d1fa48d8082b5fa68847d9b8db33b484004626af8edc0be"
+        url "https://github.com/Nelonn/gitdeps/releases/download/v0.0.2/gitdeps_0.0.2_linux_arm64.tar.gz"
+        sha256 "7be1e3d3637b4c748a322fb312e7283ab5c072d7a53ac8a975521cc5f4ccf707"
 
         def install
           bin.install "gitdeps"
